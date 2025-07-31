@@ -1,0 +1,38 @@
+.start-screen {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    >img{
+        height:100vh;
+    }
+}
+.title {
+    position: absolute;
+    bottom: 100px;
+    width: 300px !important;
+    height: 200px !important;
+}
+
+.start-label {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 75px;
+
+    >img{
+        height: auto;
+        width: 150px;
+        
+        &:hover {
+        filter: brightness(1.75);
+        width: 160px;
+        cursor: pointer;
+    }
+    }
+}
