@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from 'express';
+import { Router } from '@angular/router';
 import { AppComponent } from '../app.component';
 
 @Component({
@@ -11,14 +11,13 @@ import { AppComponent } from '../app.component';
 })
 export class StartScreenComponent {
 
-//  constructor(private router: Router){
-//  }
+constructor(private router: Router){
+}
 
 
-//newGame() {
-  //start game
-  //this.router.navigateByUrl('/game');
-//};
+newGame() {
+this.router.navigateByUrl('/game');
+};
 };
 
 

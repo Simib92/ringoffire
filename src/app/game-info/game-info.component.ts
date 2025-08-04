@@ -34,12 +34,9 @@ ngOnInit() {
 
 ngOnChanges(): void {
   if (this.card) {
-    console.log(+this.card.split('_')[0]);
     let cardNumber = +this.card.split('_')[0];
     this.title = this.cardAction[cardNumber -1].title;
     this.description = this.cardAction[cardNumber -1].description;
-    console.log(this.cardAction[cardNumber -1].title);
-    console.log(this.cardAction[cardNumber -1].description);
   }  
 }
 }
